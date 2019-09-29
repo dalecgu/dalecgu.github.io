@@ -1,6 +1,0 @@
-[submodule "themes/fexo"]
-	path = themes/fexo
-	url = https://github.com/dalecgu/fexo.git
-[submodule ".\\themes\\fexo\\"]
-	path = .\\themes\\fexo\\
-	url = https://github.com/dalecgu/fexo.git

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dalec&#39;s Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://dalecgu.github.io/"/>
+  <updated>2019-09-29T19:50:37.000Z</updated>
+  <id>http://dalecgu.github.io/</id>
+  
+  <author>
+    <name>Dalec Gu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BlogSetup</title>
+    <link href="http://dalecgu.github.io/2019/09/29/BlogSetup/"/>
+    <id>http://dalecgu.github.io/2019/09/29/BlogSetup/</id>
+    <published>2019-09-29T19:50:37.000Z</published>
+    <updated>2019-09-29T19:50:37.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="http://dalecgu.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,1 +1,0 @@
-# Dalec's Blog
