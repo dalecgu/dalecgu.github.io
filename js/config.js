@@ -3,14 +3,13 @@
 /* global hexo */
 
 /**
- * Merge configs in _data/fexo.yml into hexo.theme.config.
- * Note: configs in _data/fexo.yml will override configs in hexo.theme.config.
+ * Merge configs in _data/fexo.yml into hexo.theme.
+ * Note: configs in _data/fexo.yml will override configs in hexo.theme.
  */
 hexo.on('generateBefore', function () {
   var data = hexo.locals.get('data');
-  data && data.fexo && assign(hexo.theme.config, data.fexo);
+  data && data.fexo && assign(hexo.theme, data.fexo);
 });
-
 
 // https://github.com/sindresorhus/object-assign
 function assign(target, source) {
