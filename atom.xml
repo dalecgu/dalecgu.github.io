@@ -17,7 +17,7 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>BlogSetup</title>
+    <title>基于Hexo搭建个人博客</title>
     <link href="http://dalecgu.github.io/2019/09/29/BlogSetup/"/>
     <id>http://dalecgu.github.io/2019/09/29/BlogSetup/</id>
     <published>2019-09-29T19:50:37.000Z</published>
@@ -25,11 +25,25 @@
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景与主要工作&quot;&gt;&lt;a href=&quot;#背景与主要工作&quot; class=&quot;headerlink&quot; title=&quot;背景与主要工作&quot;&gt;&lt;/a&gt;背景与主要工作&lt;/h2&gt;&lt;h2 id=&quot;Hexo的安装与使用&quot;&gt;&lt;a href=&quot;#Hexo的安装与使用&quot;
+        
+      
+    
     </summary>
     
     
+      <category term="技术" scheme="http://dalecgu.github.io/categories/tech/"/>
+    
+      <category term="前端" scheme="http://dalecgu.github.io/categories/tech/frontend/"/>
+    
     
       <category term="Hexo" scheme="http://dalecgu.github.io/tags/Hexo/"/>
+    
+      <category term="Travis CI" scheme="http://dalecgu.github.io/tags/Travis-CI/"/>
     
   </entry>
   
