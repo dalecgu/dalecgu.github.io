@@ -56,6 +56,11 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  技术: tech
+  编程语言: programming
+  后台: backend
+  前端: frontend
+  杂谈: talk
 tag_map:
 
 # Date / Time format
