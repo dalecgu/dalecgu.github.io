@@ -73,9 +73,6 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# plugins:
-# - hexo-generator-feed
-# - hexo-server
 theme: fexo
 
 # Deployment
@@ -83,14 +80,14 @@ theme: fexo
 deploy:
   type:
 
-# feed:
-#   type: atom
-#   path: atom.xml
-#   limit: 20
-#   hub:
-#   content:
-#   content_limit: 140
-#   content_limit_delim: ' '
-#   order_by: -date
-#   icon: icon.png
-#   autodiscovery: true
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
