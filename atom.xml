@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dalecgu.github.io/"/>
-  <updated>2019-09-29T19:50:37.000Z</updated>
+  <updated>2019-10-08T21:12:00.000Z</updated>
   <id>http://dalecgu.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>基于Hexo搭建个人博客</title>
-    <link href="http://dalecgu.github.io/2019/09/29/BlogSetup/"/>
-    <id>http://dalecgu.github.io/2019/09/29/BlogSetup/</id>
-    <published>2019-09-29T19:50:37.000Z</published>
-    <updated>2019-09-29T19:50:37.000Z</updated>
+    <title>写博客之前</title>
+    <link href="http://dalecgu.github.io/2019/10/08/BeforeWritingBlogs/"/>
+    <id>http://dalecgu.github.io/2019/10/08/BeforeWritingBlogs/</id>
+    <published>2019-10-08T16:26:00.000Z</published>
+    <updated>2019-10-08T21:12:00.000Z</updated>
     
     <summary type="html">
     
@@ -29,21 +29,16 @@
       
         
         
-          &lt;h1 id=&quot;一、背景与主要工作&quot;&gt;&lt;a href=&quot;#一、背景与主要工作&quot; class=&quot;headerlink&quot; title=&quot;一、背景与主要工作&quot;&gt;&lt;/a&gt;一、背景与主要工作&lt;/h1&gt;&lt;h1 id=&quot;二、Hexo的安装与使用&quot;&gt;&lt;a
+          &lt;p&gt;我一直有写技术博客的想法，事实上在大学读书时也写过五六篇的博客，但可惜的是没能坚持下去。没能坚持写博客主要有两个原因，一是学习不够系统化、不够深入；二是缺乏更新博客的动力。&lt;/p&gt;
+&lt;p&gt;工作以后，我在leader、mentor的言传身教下，愈发感受到知识管理的重要性。le
         
       
     
     </summary>
     
     
-      <category term="技术" scheme="http://dalecgu.github.io/categories/tech/"/>
+      <category term="杂谈" scheme="http://dalecgu.github.io/categories/talk/"/>
     
-      <category term="前端" scheme="http://dalecgu.github.io/categories/tech/frontend/"/>
-    
-    
-      <category term="Hexo" scheme="http://dalecgu.github.io/tags/Hexo/"/>
-    
-      <category term="Travis CI" scheme="http://dalecgu.github.io/tags/Travis-CI/"/>
     
   </entry>
   
