@@ -36,9 +36,7 @@
     </summary>
     
     
-      <category term="技术" scheme="http://dalecgu.github.io/categories/tech/"/>
-    
-      <category term="前端" scheme="http://dalecgu.github.io/categories/tech/frontend/"/>
+      <category term="前端" scheme="http://dalecgu.github.io/categories/frontend/"/>
     
     
       <category term="Hexo" scheme="http://dalecgu.github.io/tags/Hexo/"/>
