@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>基于Hexo搭建个人博客 | Dalec&#39;s Blog</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Hexo,">
+  
+
+  <meta name="description" content="一、背景搭建环境是写博客必不可少的一个步骤。本文搭建了基于Hexo的博客环境，描述了安装到部署的全过程，提供了常见问题的解决方案。搭建过程需要依赖git、node和npm，安装完这些依赖可以通过以下命令验证，正确返回版本信息即安装成功。 123git versionnode --versionnpm --version  二、Hexo的安装与使用1. Hexo的安装使用npm install he">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Hexo搭建个人博客">
+<meta property="og:url" content="http://dalecgu.github.io/2019/10/10/BlogSetup/index.html">
+<meta property="og:site_name" content="Dalec&#39;s Blog">
+<meta property="og:description" content="一、背景搭建环境是写博客必不可少的一个步骤。本文搭建了基于Hexo的博客环境，描述了安装到部署的全过程，提供了常见问题的解决方案。搭建过程需要依赖git、node和npm，安装完这些依赖可以通过以下命令验证，正确返回版本信息即安装成功。 123git versionnode --versionnpm --version  二、Hexo的安装与使用1. Hexo的安装使用npm install he">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-10T22:14:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基于Hexo搭建个人博客">
+<meta name="twitter:description" content="一、背景搭建环境是写博客必不可少的一个步骤。本文搭建了基于Hexo的博客环境，描述了安装到部署的全过程，提供了常见问题的解决方案。搭建过程需要依赖git、node和npm，安装完这些依赖可以通过以下命令验证，正确返回版本信息即安装成功。 123git versionnode --versionnpm --version  二、Hexo的安装与使用1. Hexo的安装使用npm install he">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-38189205-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="ROUND_RECT"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、背景"><span class="toc-text">一、背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、Hexo的安装与使用"><span class="toc-text">二、Hexo的安装与使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Hexo的安装"><span class="toc-text">1. Hexo的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Hexo的使用"><span class="toc-text">2. Hexo的使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、fexo主题的安装与使用"><span class="toc-text">三、fexo主题的安装与使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-fexo主题的安装"><span class="toc-text">1. fexo主题的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-fexo主题的使用"><span class="toc-text">2. fexo主题的使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、部署"><span class="toc-text">四、部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、插件"><span class="toc-text">五、插件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-如何提供RSS订阅"><span class="toc-text">1. 如何提供RSS订阅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-如何被Google收录"><span class="toc-text">2. 如何被Google收录</span></a></li></ol></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-BlogSetup" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">基于Hexo搭建个人博客</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2019.10.10</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Dalec Gu</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/tech/">技术</a> / <a class="article-category-link" href="/categories/tech/frontend/">前端</a>
+  </span>
+
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://dalecgu.github.io/2019/10/10/BlogSetup/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h1><p>搭建环境是写博客必不可少的一个步骤。本文搭建了基于Hexo的博客环境，描述了安装到部署的全过程，提供了常见问题的解决方案。搭建过程需要依赖git、node和npm，安装完这些依赖可以通过以下命令验证，正确返回版本信息即安装成功。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br><span class="line">node --version</span><br><span class="line">npm --version</span><br></pre></td></tr></table></figure>
+
+<h1 id="二、Hexo的安装与使用"><a href="#二、Hexo的安装与使用" class="headerlink" title="二、Hexo的安装与使用"></a>二、Hexo的安装与使用</h1><h2 id="1-Hexo的安装"><a href="#1-Hexo的安装" class="headerlink" title="1. Hexo的安装"></a>1. Hexo的安装</h2><p>使用<code>npm install hexo-cli -g</code>一行命令即可完成hexo的安装，安装完成后可以通过<code>hexo version</code>验证。</p>
+<h2 id="2-Hexo的使用"><a href="#2-Hexo的使用" class="headerlink" title="2. Hexo的使用"></a>2. Hexo的使用</h2><p>hexo的使用方法可以参考<a href="https://hexo.io" target="_blank" rel="noopener">Hexo官方文档</a>。以下命令可以快速创建一个博客，并在本地运行Server预览博客。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>博客的配置在_config.yml，细节可以参考<a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">Hexo配置</a>。hexo的常用命令如下，其他命令可以参考<a href="https://hexo.io/docs/commands" target="_blank" rel="noopener">Hexo命令</a>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt; <span class="comment">#例如hexo new draft test创建名为test的草稿</span></span><br><span class="line">hexo publish <span class="comment">#将草稿正式发布</span></span><br><span class="line">hexo server <span class="comment">#本地预览博客</span></span><br><span class="line">hexo generate <span class="comment">#生成静态文件，只需部署该命令生成的文件</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="三、fexo主题的安装与使用"><a href="#三、fexo主题的安装与使用" class="headerlink" title="三、fexo主题的安装与使用"></a>三、fexo主题的安装与使用</h1><p>fexo是一个既好看又好用的hexo主题。</p>
+<h2 id="1-fexo主题的安装"><a href="#1-fexo主题的安装" class="headerlink" title="1. fexo主题的安装"></a>1. fexo主题的安装</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">git <span class="built_in">clone</span> git@github.com:forsigner/fexo.git themes/fexo</span><br></pre></td></tr></table></figure>
+
+<p>fexo的安装很简单，只需要把代码clone到themes目录下，然后把_config.yml中theme的配置改为fexo。</p>
+<h2 id="2-fexo主题的使用"><a href="#2-fexo主题的使用" class="headerlink" title="2. fexo主题的使用"></a>2. fexo主题的使用</h2><p>使用master分支的fexo，配置时需要修改theme/fexo/_config.yml。在更新fexo时可能会因为配置项的改变导致冲突，更方便的做法是利用hexo 3的新特性Data Files将主题和配置分离。使用该方法需要切换到fexo的dev分支，然后在博客的source目录下新增_data文件夹，最后复制theme/fexo/_config.yml为source/_data/fexo.yml。之后只需要修改fexo.yml完成配置。fexo的配置可以参考<a href="http://forsigner.com/2016/03/10/fexo-doc-zh-cn/" target="_blank" rel="noopener">fexo配置</a>。</p>
+<h1 id="四、部署"><a href="#四、部署" class="headerlink" title="四、部署"></a>四、部署</h1><p>我的博客使用git进行版本控制，源代码存储在GitHub，部署在GitHub Pages。使用持续集成可以简化博客的部署流程，将修改push到远程仓库后，Travis CI会完成部署工作。配置方法可以参考<a href="https://easyhexo.com/1-Hexo-install-and-config/1-5-continuous-integration.html" target="_blank" rel="noopener">easyhexo</a>。</p>
+<h1 id="五、插件"><a href="#五、插件" class="headerlink" title="五、插件"></a>五、插件</h1><h2 id="1-如何提供RSS订阅"><a href="#1-如何提供RSS订阅" class="headerlink" title="1. 如何提供RSS订阅"></a>1. 如何提供RSS订阅</h2><p>使用<code>npm install hexo-generator-feed --save</code>安装插件，再调用<code>hexo generate</code>，会在public目录生成atom.xml文件。在RSS订阅器里指定该文件的路径，例如<code>https://dalecgu.github.io/atom.xml</code>，就可以完成博客的订阅。<code>hexo-generator-feed</code>和新版的hexo有兼容性问题，可以参考<a href="https://github.com/hexojs/hexo-generator-feed/issues/43" target="_blank" rel="noopener">issue43</a>。</p>
+<h2 id="2-如何被Google收录"><a href="#2-如何被Google收录" class="headerlink" title="2. 如何被Google收录"></a>2. 如何被Google收录</h2><p>如果好不容易写的博客连搜索引擎都搜索不到，被人看到的几率就更加低了。为了让Google收录我们的博客，需要先生成网站的sitemap。只需要<code>npm install hexo-generator-sitemap --save</code>安装插件，再调用<code>hexo generate</code>，应该会在public目录生成sitemap.xml文件。</p>
+<p>然后需要在<a href="https://search.google.com/search-console/index" target="_blank" rel="noopener">Google SearchConsole</a>上提交sitemap。</p>
+<ol>
+<li>第一次登入Google SearchConsole时会提示Add property，选择URL prefix，然后输入博客路径，例如<code>https://dalecgu.github.io</code></li>
+<li>选择一种方式验证你是该路径的所有者，我选择的是通过html文件认证，只需要把Google提供的html文件放在public目录，然后点击Verify</li>
+<li>验证通过后，点击左边Sitemaps按钮，然后填写sitemap文件的路径，例如<code>https://dalecgu.github.io/sitemap.xml</code></li>
+<li>然后点击左边Coverage按钮，会提示数据处理中，等待数天，这里会显示Google收录了哪些页面</li>
+</ol>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持dalecgu</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2019/10/08/BeforeWritingBlogs/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="ROUND_RECT"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'dalecgu';
+    
+    var disqus_url = 'http://dalecgu.github.io/2019/10/10/BlogSetup/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//dalecgu.disqus.com/count.js" async></script>
+
+
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
