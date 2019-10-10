@@ -3,7 +3,6 @@ title: 基于Hexo搭建个人博客
 tags:
   - Hexo
 categories:
-  - 技术
   - 前端
 date: 2019-10-10 22:14:37
 updated: 2019-10-10 22:14:37
